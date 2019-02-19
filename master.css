@@ -39,6 +39,10 @@ header {
   width: 70%;
 }
 
+.column.list {
+  width: 50%;
+}
+
 
 .row:after {
   content: "";
@@ -80,4 +84,26 @@ a {
   line-height: 0.5;
   display: inline-block;
   vertical-align: middle;
+}
+
+.area {
+  width: 60%;
+
+}
+
+.feature {
+  float: left;
+  margin-right: 10px;
+}
+
+.icon {
+  background-color: #8428de;
+}
+
+.area p {
+  margin-left: 20px;
+  background-color:
+}
+.area img {
+  float: left;
 }
