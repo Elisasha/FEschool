@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /*min-width: 1122px;
+  min-height: 1750px;
+*/
+}
+
+header {
+  margin-bottom: 110px;
+}
+
+.bg {
+    background: url("assets/background-image.jpg") no-repeat 0 38%;
+    height: 200px;
+}
+
+.row {
+    display: block;
+    margin: 0 auto;
+    max-width: 984px;
+}
+
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+  width: 30%;
+}
+
+.column.middle {
+  width: 70%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+.logo {
+  border-radius: 100px;
+  margin-left: 520px;
+  margin-top: 150px;
+}
+
+.gosling {
+  border-radius: 48px;
+  margin-right: 10px;
+  display: inline-block;
+  float: left;
+}
+
+/* <p> Ivan Ivanov */
+/* .contacts {
+  margin-bottom: -6px;
+} */
+
+.contacts{
+  line-height: 0.5;
+  display: inline-block;
+  vertical-align: middle;
+}
