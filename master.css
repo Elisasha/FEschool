@@ -2,12 +2,14 @@
   box-sizing: border-box;
 }
 
+* {
+  font-family: Arial;
+  color: #383838;
+}
+
 body {
   padding: 0;
   margin: 0;
-  /*min-width: 1122px;
-  min-height: 1750px;
-*/
 }
 
 header {
@@ -17,6 +19,7 @@ header {
 .bg {
     background: url("assets/background-image.jpg") no-repeat 0 38%;
     height: 200px;
+    width: 100%;
 }
 
 .row {
@@ -28,7 +31,6 @@ header {
 
 .column {
   float: left;
-  padding: 10px;
 }
 
 .column.side {
@@ -39,10 +41,9 @@ header {
   width: 70%;
 }
 
-.column.list {
+.column.area {
   width: 50%;
 }
-
 
 .row:after {
   content: "";
@@ -50,60 +51,76 @@ header {
   clear: both;
 }
 
-a {
-  text-decoration: none;
-}
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+  .column.side, .column.middle, .column.area {
     width: 100%;
   }
 }
 
 .logo {
   border-radius: 100px;
-  margin-left: 520px;
+  margin-left: 18%;
   margin-top: 150px;
 }
 
 .gosling {
   border-radius: 48px;
-  margin-right: 10px;
+  margin-right: 12px;
   display: inline-block;
   float: left;
 }
 
-/* <p> Ivan Ivanov */
-/* .contacts {
-  margin-bottom: -6px;
-} */
-
-.contacts{
+.contacts {
   line-height: 0.5;
   display: inline-block;
   vertical-align: middle;
 }
 
-.area {
-  width: 60%;
-
-}
-
-.feature {
-  float: left;
-  margin-right: 10px;
-}
-
 .icon {
-  background-color: #8428de;
+  width: 18px;
+  float: left;
 }
 
-.area p {
-  margin-left: 20px;
-  background-color:
+.icon.internet {
+    background-color: #5A4D99;
 }
-.area img {
-  float: left;
+
+.icon.handshake {
+    background-color: #1A587A;
+}
+
+.icon.culture {
+    background-color: #BFCC36;
+}
+
+.area-elem {
+  display: block;
+}
+
+.area-elem p {
+  margin-left: 24px;
+  overflow: auto;
+}
+
+.about {
+  color: #757575;
+  padding-right: 30px;
+}
+
+a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #009DF2;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 15px;
 }
